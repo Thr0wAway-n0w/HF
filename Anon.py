@@ -45,77 +45,80 @@ def main():
     os.chdir("AnonGT")
     os.system("sudo chmod +x install.py")
     os.system("sudo python3 ./install.py install")
+    main_menu()
+
+    def main_menu():
     os.system("sudo python3 AnonGT.py")
     choice = input("Select Option: ")
     if choice == "start":
         os.system("sudo python3 AnonGT.py start")
-        main()
+        main_menu()
     if choice == "start+":
         os.system("sudo python3 AnonGT.py start+")
-        main()
+        main_menu()
     if choice == "stop":
         os.system("sudo python3 AnonGT.py stop")
-        main()
+        main_menu()
     if choice == "status":
         os.system("sudo python3 AnonGT.py status")
         time.sleep(5)
-        main()
+        main_menu()
     if choice == "myip":
         os.system("sudo python3 AnonGT.py myip")
         time.sleep(5)
-        main()
+        main_menu()
     if choice == "chngid":
         os.system("sudo python3 AnonGT.py chngid")
-        main()
+        main_menu()
     if choice == "autochng":
         os.system("sudo python3 AnonGT.py autochng")
-        main()
+        main_menu()
     if choice == "antimitm":
         os.system("sudo python3 AnonGT.py antimitm")
-        main()
+        main_menu()
     if choice == "chngmac":
         os.system("sudo python3 AnonGT.py chngmac")
-        main()
+        main_menu()
     if choice == "rvmac":
         os.system("sudo python3 AnonGT.py rvmac")
-        main()
+        main_menu()
     if choice == "oniongen":
         os.system("sudo python3 AnonGT.py oniongen")
-        main()
+        main_menu()
     if choice == "checko":
         os.system("sudo python3 AnonGT.py checko")
-        main()
+        main_menu()
     if choice == "share":
         os.system("sudo python3 AnonGT.py share")
-        main()
+        main_menu()
     if choice == "receive":
         os.system("sudo python3 AnonGT.py receive")
-        main()
+        main_menu()
     if choice == "chat":
         os.system("sudo python3 AnonGT.py chat")
-        main()
+        main_menu()
     if choice == "website":
         os.system("sudo python3 AnonGT.py website")
-        main()
+        main_menu()
     if choice == "wipe":
         os.system("sudo python3 AnonGT.py wipe")
-        main()
+        main_menu()
     if choice == "fix":
         os.system("sudo python3 AnonGT.py fix")
-        main()
+        main_menu()
     if choice == "checku":
         os.system("sudo python3 AnonGT.py checku")
-        main()
+        main_menu()
     if choice == "about":
         os.system("sudo python3 AnonGT.py about")
-        main()
+        main_menu()
     elif choice == "6":
         exit()
     else:
         print("\033[91m INVALID SELECTION\033[0m")
         time.sleep(1)
         change()
-        main() 
+        main_menu() 
 
 if __name__ == "__main__":
     main()    
