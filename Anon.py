@@ -47,7 +47,7 @@ def main():
     os.system("sudo python3 ./install.py install")
     main_menu()
 
-    def main_menu():
+def main_menu():
     os.system("sudo python3 AnonGT.py")
     choice = input("Select Option: ")
     if choice == "start":
